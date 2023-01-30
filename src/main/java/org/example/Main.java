@@ -1,4 +1,7 @@
 package org.example;
+
+import java.util.logging.Logger;
+
 class Student extends Main {
     private String name;
     private int gradeLevel;
@@ -21,9 +24,10 @@ class Student extends Main {
 
 class Main{
     public static void main(String[] args) {
+    Logger l = Logger.getLogger("com.api.jar");
         Student student = new Student("John Doe", 12, 3.5);
-        System.out.println(student.getInfo());
+        l.info(student.getInfo());
         student.updateGPA(3.7);
-        System.out.println(student.getInfo());
+        l.info(student.getInfo());
     }
 }
