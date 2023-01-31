@@ -22,7 +22,6 @@ class Student extends Main {
         return name + " is in grade " + gradeLevel + " and has a " + gpa + " GPA";
     }
 }
-
 class Main{
     public static void main(String[] args) {
         Scanner se = new Scanner(System.in);
@@ -38,5 +37,4 @@ class Main{
             student.updateGPA(3.7);
             l.info(student.getInfo());
         }
-
     }
